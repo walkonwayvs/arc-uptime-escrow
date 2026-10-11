@@ -1,0 +1,17 @@
+{
+  "rpc_url": "https://rpc.mainnet.arc.io",
+  "chain_id": 5042,
+  "explorer": "https://explorer.arc.io",
+  "watcher_key_file": "/path/to/watcher.key",
+  "jobs": [
+    {
+      "name": "arc-rpc",
+      "escrow": "0xYOUR_ESCROW_ADDRESS",
+      "check": "arc_rpc",
+      "url": "https://rpc.mainnet.arc.io",
+      "chain_id": 5042,
+      "max_ms": 5000,
+      "log": "logs/arc-rpc.jsonl"
+    }
+  ]
+}
