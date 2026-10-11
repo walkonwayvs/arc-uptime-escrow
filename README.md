@@ -26,7 +26,7 @@ Payouts go out every 6 hours in one batch. Open the main escrow on the explorer 
 ### Results so far
 
 - **First day (Oct 10):** while I tested the watcher against a validator on another network, the escrow watched 18 hours, paid 16 and held back 2. Both misses were real, not staged: one hour the validator fell to 98.9% agreement, just under the bar, and one hour its health data was incomplete, so the watcher refused to sign.
-- **From Oct 11:** the same escrow pays for the uptime of an Arc RPC endpoint, so both the service and the money are on Arc. The contract didn't change: it only checks the watcher's signatures, so pointing it at a different service is a watcher setting.
+- **From Oct 11, 05:00 UTC:** the same escrow pays for the uptime of an Arc RPC endpoint, so both the service and the money are on Arc. The contract didn't change: it only checks the watcher's signatures, so pointing it at a different service is a watcher setting.
 - **Fees:** each 6-hour payout cost about 0.004 to 0.005 USDC, roughly 0.1 cent per paid hour, about 2% of the 5 cent rate.
 
 The second escrow shows a clean down hour on purpose. It watches a small test page that was switched off for one hour (Oct 10, 08:00 to 09:00 UTC). That hour has no signed note, so it was never paid: 3 of its 4 hours paid out, and the unpaid 0.05 USDC goes back to the customer after the term plus a 24 hour grace period.
